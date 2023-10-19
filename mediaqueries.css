@@ -1,0 +1,124 @@
+@media (max-width: 767px) {
+  @-webkit-keyframes rotateDiceAnim {
+    0% {
+      -webkit-transform: translate(50%, -30%) scale(0.8) rotateZ(0);
+      transform: translate(50%, -30%) scale(0.8) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: translate(50%, -30%) scale(1) rotateZ(180deg);
+      transform: translate(50%, -30%) scale(1) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: translate(50%, -30%) scale(0.8) rotateZ(360deg);
+      transform: translate(50%, -30%) scale(0.8) rotateZ(360deg);
+    }
+  }
+  @keyframes rotateDiceAnim {
+    0% {
+      -webkit-transform: translate(50%, -30%) scale(0.8) rotateZ(0);
+      transform: translate(50%, -30%) scale(0.8) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: translate(50%, -30%) scale(1) rotateZ(180deg);
+      transform: translate(50%, -30%) scale(1) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: translate(50%, -30%) scale(0.8) rotateZ(360deg);
+      transform: translate(50%, -30%) scale(0.8) rotateZ(360deg);
+    }
+  }
+
+  .colTwo {
+    background-color: rgb(221, 221, 221);
+    border-radius: 0;
+  }
+
+  .contGames {
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    flex-wrap: wrap !important;
+    height: 100vh;
+  }
+
+  .row {
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    align-items: flex-start;
+  }
+
+  .colOne {
+    border-radius: 0px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .playerOne,
+  .playerTwo {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .scoreTitle {
+    font-size: 1.1rem;
+  }
+  .scoreDice {
+    font-size: 2rem;
+  }
+  .numDice {
+    position: absolute;
+    top: 465px;
+    right: 50%;
+    transform: translate(50%, -30%);
+    color: #2e2e2e;
+    font-size: 4.3rem;
+  }
+  .divgameOne,
+  .divgameTwo {
+    margin: 10px 0px 10px 0px;
+  }
+  .buttonrollDiceAbsolute {
+    position: fixed;
+    width: 100vw;
+    bottom: 40px;
+    transform: translate(0);
+    right: 0;
+    z-index: 100;
+  }
+  .buttonstopAbsolute {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    transform: translate(0);
+    right: 0;
+    z-index: 100;
+  }
+
+  .buttonresetgameAbsolute {
+    position: fixed;
+    width: 100vw;
+    bottom: 680px;
+    transform: translate(0);
+    right: 0;
+    z-index: 100;
+  }
+
+  .lastButton,
+  .secondButton,
+  .firstButton {
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .dice {
+    position: absolute;
+    top: 345px;
+    right: 50%;
+    transform: translate(50%, -30%) scale(0.8);
+  }
+}

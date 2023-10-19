@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap");
+
+@-webkit-keyframes rotateDiceAnim {
+  0% {
+    -webkit-transform: translate(50%, -70%) scale(1) rotateZ(0);
+    transform: translate(50%, -70%) scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: translate(50%, -70%) scale(1.3) rotateZ(180deg);
+    transform: translate(50%, -70%) scale(1.3) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: translate(50%, -70%) scale(1) rotateZ(360deg);
+    transform: translate(50%, -70%) scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotateDiceAnim {
+  0% {
+    -webkit-transform: translate(50%, -70%) scale(1) rotateZ(0);
+    transform: translate(50%, -70%) scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: translate(50%, -70%) scale(1.3) rotateZ(180deg);
+    transform: translate(50%, -70%) scale(1.3) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: translate(50%, -70%) scale(1) rotateZ(360deg);
+    transform: translate(50%, -70%) scale(1) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes button {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes buttonReverse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contGames {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 2px 15px rgb(167, 167, 167);
+  border-radius: 5px;
+}
+
+.rowGames {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.colOne {
+  display: flex;
+  justify-content: center;
+  background-color: #2e2e2e;
+  border-radius: 8px 0px 0px 8px;
+  padding: 0;
+}
+
+.colTwo {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0px 8px 8px 0px;
+  border-left: none;
+  padding: 0;
+}
+
+.buttonrollDiceAbsolute {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 16%;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.buttonstopAbsolute {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.buttonresetgameAbsolute {
+  display: none;
+  align-items: center;
+  position: absolute;
+  bottom: -13%;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.lastButton,
+.secondButton,
+.firstButton {
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  padding: 8px 20px 8px 20px;
+  color: white;
+}
+
+.firstButton {
+  background-color: #8000ff;
+}
+
+.secondButton {
+  background-color: #ff006f;
+}
+
+.lastButton {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -70%);
+  border-radius: 20px;
+  box-shadow: 1px 0px 10px rgb(75, 75, 75);
+  background-image: linear-gradient(to bottom, #8000ff, #5800af);
+  width: 130px;
+  height: 130px;
+}
+
+.active {
+  width: 12px;
+  height: 0.75rem;
+  background-color: #ff006f;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.divgameOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.divgameTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(73, 73, 73);
+  font-family: "Lato", sans-serif;
+  color: #2e2e2e;
+}
+
+.numDice {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 10rem;
+}
+
+.scoreDice {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.scoreTitle {
+  margin: 0;
+}
+
+.playerOne,
+.playerTwo {
+  margin: 50px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+}
+
+.rotateDiceAnim {
+  -webkit-animation: rotateDiceAnim 0.35s linear both;
+  animation: rotateDiceAnim 0.35s linear both;
+}
+
+button:hover {
+  -webkit-animation: button 0.1s linear both;
+  animation: button 0.1s linear both;
+}
+
+button:not(:hover) {
+  -webkit-animation: buttonReverse 0.1s linear both;
+  animation: buttonReverse 0.1s linear both;
+}
+
+aside {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2ef3;
+  z-index: 200;
+}
+.divAside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #2e2e2e;
+}
+
+.divAside > h2 {
+  margin: 25px 0px 40px 0px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.divAside > button {
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 8px 20px 8px 20px;
+  background-color: #8000ff;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
