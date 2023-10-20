@@ -85,7 +85,7 @@
   .buttonrollDiceAbsolute {
     position: fixed;
     width: 100vw;
-    bottom: 40px;
+    bottom: 50.39px;
     transform: translate(0);
     right: 0;
     z-index: 100;
@@ -105,15 +105,22 @@
     top: 530px;
     transform: translate(0);
     right: 0;
-
+    height: auto;
   }
-
-  .lastButton,
+  
   .secondButton,
   .firstButton {
     border-radius: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 12px 20px 12px 20px;
   }
+
+  .lastButton{
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 12px 20px 12px 20px;
+  }
+
 
   .dice {
     position: absolute;

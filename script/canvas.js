@@ -234,7 +234,7 @@ oneButton.addEventListener("click", () => {
   } else {
     oneButton.innerHTML = "LANCER LE DÉ";
     twoButton.innerHTML = "STOP";
-    newGame.style.display = "block";
+    newGame.style.display = "flex";
     firstPlayer.firstElementChild.firstElementChild.classList.add("active");
   }
 });
