@@ -138,7 +138,7 @@ main {
   display: none;
   align-items: center;
   position: absolute;
-  
+  top: 5%;
   right: 50%;
   transform: translate(50%);
 }
@@ -166,8 +166,7 @@ main {
 
 .lastButton {
   display: flex;
-  background-color: transparent;
-  color: black;
+  background-color: #ff006f;
   justify-content: center;
   align-items: center;
 }
