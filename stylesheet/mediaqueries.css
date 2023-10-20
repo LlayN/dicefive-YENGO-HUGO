@@ -28,6 +28,10 @@
     }
   }
 
+  body{
+    overflow: hidden;
+  }
+
   .colTwo {
     background-color: rgb(221, 221, 221);
     border-radius: 0;
@@ -100,7 +104,6 @@
   }
 
   .buttonresetgameAbsolute {
-    position: fixed;
     top: 285px;
     height: auto;
   }
