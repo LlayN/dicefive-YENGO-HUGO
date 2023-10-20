@@ -102,10 +102,10 @@
   .buttonresetgameAbsolute {
     position: fixed;
     width: 100vw;
-    bottom: 680px;
+    bottom: 185px;
     transform: translate(0);
     right: 0;
-    z-index: 100;
+    z-index: 99;
   }
 
   .lastButton,
